@@ -1,24 +1,35 @@
 body {
     font-family: monospace;
-    font-size: 12pt;
+    font-size: 10pt;
     background-image: url(bg.png);
     background-position: top left;
     background-repeat: repeat;
 
 }
 
+#title {
+    margin: 2% 2% 5% 2%;
+    align: center;
+}
+
 #main {
     align: center;
-    margin: 5% 15%;
+    margin: 2% 2%;
     padding: 2% 2%;
     background-color: #f1f1f1;
     border-radius: 10pt;
 }
 
-#title {
-    margin: 5% 15%;
-    align: center;
-
+@media (min-width: 600px) {
+    body {
+        font-size: 12pt;
+    }
+    #title {
+        margin: 5% 15%;
+    }
+    #main {
+        margin: 5% 15%;
+    }
 }
 
 h1 {
